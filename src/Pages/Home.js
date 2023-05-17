@@ -9,7 +9,7 @@ import squadImg from '../images/squad.svg';
 
 function Home() {
     return(
-        <div className="App">
+        <div className="content">
             <Container id="squadPicContainer">
                 <img id="squadPic" alt="Squad" src={squadPic}></img>
             </Container>

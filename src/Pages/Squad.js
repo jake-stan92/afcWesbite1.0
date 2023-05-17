@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import PlayerCard from "../Components/PlayerCard";
 import headshot from "../images/head.svg"
 import uniqid from "uniqid"
+import Footer from "../Components/Footer";
 
 function Squad() {
 
@@ -16,24 +17,27 @@ function Squad() {
     return(
         <div className="App">
             <Header />
-            <h1 className="text-center">Squad Page</h1>
-            <Container id="squadCardContainer">
-                {squadStats.map((x) => {
-                    return(                        
-                        <PlayerCard 
-                        key={uniqid()}
-                        image={x.image}
-                        name={x.name}
-                        pace={x.pace}
-                        dribbling={x.dribbling}
-                        shooting={x.shooting}
-                        defending={x.defending}
-                        passing={x.passing}
-                        physical={x.physical}
-                        />  
-                    )
-                })}
-            </Container>
+            <div className="content">
+                <h1 className="text-center">Squad Page</h1>
+                <Container id="squadCardContainer">
+                    {squadStats.map((x) => {
+                        return(                        
+                            <PlayerCard 
+                            key={uniqid()}
+                            image={x.image}
+                            name={x.name}
+                            pace={x.pace}
+                            dribbling={x.dribbling}
+                            shooting={x.shooting}
+                            defending={x.defending}
+                            passing={x.passing}
+                            physical={x.physical}
+                            />  
+                        )
+                    })}
+                </Container>
+            </div>
+            <Footer />
         </div>
     )
 }

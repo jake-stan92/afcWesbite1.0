@@ -1,10 +1,14 @@
+import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 
 function Reports() {
     return(
         <div className="App">
             <Header />
-            <h1>Reports Page</h1>
+            <div className="content">
+                <h1>Reports Page</h1>
+            </div>
+            <Footer />
         </div>
     )
 }
