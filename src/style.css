@@ -61,6 +61,18 @@
         margin-bottom: 0.5rem;
     }
 
+    /* CONTACT PAGE */
+
+    #mapContainer {
+        /* padding: 0rem 4rem; */
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    #googleMap {
+        width: 100%;
+    }
+
     /* FOOTER */
 }
 
