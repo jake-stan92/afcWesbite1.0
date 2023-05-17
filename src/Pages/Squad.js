@@ -1,5 +1,5 @@
 import Header from "../Components/Header";
-import  Container from "react-bootstrap/Container";
+import Container from "react-bootstrap/Container";
 import PlayerCard from "../Components/PlayerCard";
 import headshot from "../images/head.svg"
 import uniqid from "uniqid"
