@@ -17,8 +17,8 @@ function Squad() {
     return(
         <div className="App">
             <Header />
-            <div className="content">
-                <h1 className="text-center">Squad Page</h1>
+            <div className="content" id="squadPageContent">
+                <h1 className="text-center">2022/2023 Season Squad</h1>
                 <Container id="squadCardContainer">
                     {squadStats.map((x) => {
                         return(                        

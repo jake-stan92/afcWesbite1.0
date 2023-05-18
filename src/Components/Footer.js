@@ -9,10 +9,14 @@ function Footer() {
     return(
         <Navbar bg="dark">
             <Container className="text-white socials">
-                <h3>Copyright &#169; AFC</h3>
-                <img alt="Facebook" src={facebookImg}></img>
-                <img alt="Instagram" src={instagramImg}></img>
-                <img alt="Twitter" src={twitterImg}></img>
+                <div>
+                    <h5>Copyright &#169; AFC</h5>
+                </div>
+                <div className="socialIcons">
+                    <img alt="Facebook" src={facebookImg}></img>
+                    <img alt="Instagram" src={instagramImg}></img>
+                    <img alt="Twitter" src={twitterImg}></img>
+                </div>
             </Container>
         </Navbar>
     )

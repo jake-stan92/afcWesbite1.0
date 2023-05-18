@@ -13,7 +13,7 @@ function Header() {
                 <Navbar.Toggle  className='mx-3' aria-controls="navbarScroll" data-bs-targets="#navbarScroll"></Navbar.Toggle>
                 {/* pre collapsed navbar */}
                 <Navbar.Collapse className="justify-content-end" id="navbarScroll">
-                <Nav className='align-items-end px-4'>
+                <Nav className='align-items-end px-4 navLinks'>
                     <NavLink eventKey="1" href="/" >Home</NavLink>
                     <NavLink eventKey="2" href="/reports" >Reports</NavLink>
                     <NavLink eventKey="3" href="/contact" >Contact</NavLink>
