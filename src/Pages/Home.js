@@ -1,17 +1,17 @@
 import Container from "react-bootstrap/Container";
 import HomeCard from "../Components/HomeCard";
 
-import squadPic from "../images/squadPic.jpg";
+import squadPic from "../images/squadPic.png";
 import reportImg from "../images/report.svg";
 import pinImg from "../images/pin.svg";
 import squadImg from '../images/squad.svg';
-import { CardGroup } from "react-bootstrap";
+import CardGroup from "react-bootstrap/CardGroup";
 
 
 function Home() {
     return(
         <div className="content">
-            <Container id="squadPicContainer">
+            <Container fluid id="squadPicContainer">
                 <img id="squadPic" alt="Squad" src={squadPic}></img>
             </Container>
             {/* <Container className="d-flex" id="cardContainer">

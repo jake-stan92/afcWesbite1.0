@@ -1,5 +1,5 @@
 import Card from "react-bootstrap/Card"
-import Container from "react-bootstrap/Container"
+// import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
@@ -11,7 +11,7 @@ function PlayerCard(props) {
             <Card.Title>
                 {name}
             </Card.Title>
-            <Container id="playerStatsContainer">
+            <div id="playerStatsContainer">
                 <Row>
                     <Col>{pace} PAC</Col>
                     <Col>{dribbling} DRI</Col>
@@ -24,7 +24,7 @@ function PlayerCard(props) {
                     <Col>{passing} PAS</Col>
                     <Col>{physical} PHY</Col>
                 </Row>
-            </Container>
+            </div>
         </Card>
     )
 }

@@ -25,17 +25,18 @@
 }
 
 #header a {
-    color: white;
+    color: black
 }
 
 #header .navLinks a:hover {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid black;
 }
+
 /* HOME PAGE */
 
 #squadPic {
     width: 100%;
-    height: 400px;
+    height: 900px;
     object-fit: cover;
 }
 
@@ -55,7 +56,7 @@
 
 .card {
     align-items: center;
-    padding: 1.5rem;  
+    padding: 1.75rem;  
     flex: 1; 
     border: 2px solid black;     
 }
@@ -85,12 +86,16 @@
 #squadCardContainer {
     display: grid;
     grid-gap: 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+#playerStatsContainer {
+    width: 100%;
 }
 
 .playerCard,
 .card-title  {
-    font-size: 2rem;
+    font-size: 1.1rem;
 }
 
 .playerCardImg {
@@ -131,12 +136,12 @@
     margin-bottom: 0;
 }
 
-.socials img {
-    width: 70px;
+.socialIconsFooter img {
+    width: 60px;
     height: auto;
 }
 
-.socialIcons {
+.socialIconsFooter {
     display: flex;
     gap: 2rem;
 }
@@ -153,11 +158,38 @@
     }
 
     #header button {
-        border: 2px solid;
+        border: 1px solid black;
+    }
+
+    #header button:focus {
+        -webkit-box-shadow: 0 0 10px black;
+        box-shadow: 0 0 10px black;
     }
 
     #header {
         font-size: 1rem;
+    }
+
+    .navbar {
+        background-color: rgb(219, 216, 216);
+    }
+
+    .navLinks {
+        margin-top: 1rem;
+        height: 100vh;
+        align-items: center;
+        padding-top: 2rem;
+        font-size: 3rem;
+        background-color: black;
+        border-radius: 5px;
+    }
+
+    #header a {
+        color: white;
+    }
+
+    #header .navLinks a:hover {
+        border-bottom: 1px solid white;
     }
 
     /* HOME PAGE */
@@ -167,8 +199,9 @@
     }
 
     #squadPic {
+        /* position: relative; */
         width: 100%;
-        height: 150px;
+        height: 100%;
         object-fit: cover;
     }
 
@@ -271,14 +304,80 @@
         margin-bottom: 0;
     }
 
-    .socials img {
-        width: 40px;
+    .socialIconsFooter img,
+    .socialIconsNav img {
+        width: 30px;
         height: auto;
     }
 
-    .socialIcons {
+    .socialIconsNav {
         display: flex;
         gap: 1rem;
     }
+
+    .navLinks .socialIconsNav {
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .socialIconsFooter {
+        display: flex;
+        gap: 2rem;
+    }
+
+    
 }
 
+@media (min-width: 767px) {
+    .container {
+        max-width: 80%;
+    }
+
+    .container-fluid {
+        max-width: 100%;
+    }
+
+    #squadPic {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* PLAYER CARD CHANGE */
+    .playerCard,
+    .card-title  {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 70%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .container {
+        max-width: 60%;
+    }
+
+    .container-fluid {
+        max-width: 90%;
+    }
+
+    #squadPic {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* PLAYER CARD CHANGE */
+    #squadCardContainer {        
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .playerCard,
+    .card-title  {
+        font-size: 2rem;
+    }
+}
