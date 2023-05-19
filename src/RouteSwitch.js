@@ -11,7 +11,7 @@ function RouteSwitch() {
             <Routes>
                 <Route path="/" element={<App />} />
                 <Route path="/squad" element={<Squad />} />
-                <Route path="/contact" element={<Contact />} />
+                <Route path="/find us" element={<Contact />} />
                 <Route path="/reports" element={<Reports />} />
             </Routes>
         </BrowserRouter>

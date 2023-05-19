@@ -16,7 +16,7 @@ function Header() {
                 <Nav className='align-items-end px-4 navLinks'>
                     <NavLink eventKey="1" href="/" >Home</NavLink>
                     <NavLink eventKey="2" href="/reports" >Reports</NavLink>
-                    <NavLink eventKey="3" href="/contact" >Contact</NavLink>
+                    <NavLink eventKey="3" href="/find us" >Contact</NavLink>
                     <NavLink eventKey="4" href="/squad" >Squad</NavLink>
                 </Nav>
                 </Navbar.Collapse>
